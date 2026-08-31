@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Movie Task</title>
+</head>
+
+<body>
+
+        <div class="container mt-4 pt-3">
+            <div class="row">
+                <div class="col-md-6 logoParent">
+                   <a href="index.html">
+                      <img data-hawkins-id="BrandNetflixLogotype"
+                        src="https://occ.a.nflxso.net/dnmt/api/v6/iL4oJVDYZ8KLSrJ6eG2OwtghbfQ/AAAAAfwxusEeCteu-L_QQ56_G2cohyI1E4BIh2uyr5t9gDhH0CKWHw3NVhndjuF7yQ26z3cYq_lnzY5pP6OarHyiibuiy2jIIa5sIhSvgal1S6u9YDVAyVoX6osPniEKN-dYy77H_pLfOCD7.svg"
+                        aria-hidden="true" class="default-ltr-iqcdef-cache-lsmm1l ejnndvn0">
+                   </a>
+                </div>
+                <div class="col-md-6 logo">
+                     <button type="button" class="primaryBtn" id="showform">Add Movie</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+             <div class="row mt-4" id="moviesCard">
+                <!-- <div class="col-md-3">
+                    <div class="card movieCardImg">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4 class="text-white">3Idiots In college, Farhan and Raju form</h4>
+                            <span class="text-white">5</span>
+                        </div>
+                        <div class="card-body movieCard">
+                            <figure>
+                                <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*sz4YPRDk4ZOmGFtWfezAAQ.jpeg"
+                                    alt="3idiots">
+
+                                <figcaption class="text-white">
+                                    <h5>3Idiots In college, Farhan and Raju form</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim assumenda amet, et impedit, veniam est omnis illo provident consequatur aliquid nobis at ullam reprehenderit? Esse accusamus culpa dolores, corporis quaerat earum unde at cumque temporibus facilis, reprehenderit autem blanditiis quis. Temporibus ut deleniti facere ipsum dolorem, minima doloremque voluptatibus amet reprehenderit vitae, maiores eaque ea quaerat! Sunt sint dolorum sapiente reprehenderit, dolore deleniti maiores magni illum ducimus quae ipsa quis dolores recusandae, quibusdam iste in quo quaerat pariatur, iusto ratione ipsum enim placeat? Eveniet, nulla nesciunt debitis corporis ullam, sint praesentium autem ratione doloribus consequatur dignissimos veniam quae adipisci tenetur.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <div class=" d-flex justify-content-between">
+                                <button type="button" class="editBtn" id="">Edit</button>
+                                <button type="button" class="primaryBtn">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-3">
+                    <div class="card  movieCardImg">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4 class="text-white">3Idiots</h4>
+                            <span class="text-white ">5</span>
+                        </div>
+                        <div class="card-body movieCard">
+                            <figure>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6tfxnt2G0toAN6N4E2WvvUT-vwmYr7QJlCXCHWemzuNeV_QY6tbSUhXWXA5_lcBgsrlgxzw&s=10"
+                                    alt="maaMovie">
+                                <figcaption class="text-white">
+                                    <h4>Maa</h4>
+                                    In college, Farhan and Raju form a great bond with Rancho due to his
+                                    refreshing outlook. Years later, a bet gives them a chance to look for their
+                                    long-lost friend whose existence seems rather elusive
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <button type="button" class="editBtn">Edit</button>
+                            <button type="button" class="primaryBtn">Remove</button>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-3">
+                    <div class="card  movieCardImg">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4 class="text-white">3Idiots</h4>
+                            <span class="text-white">5</span>
+                        </div>
+                        <div class="card-body adjstCardBodyImg">
+                            <figure>
+                                <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*sz4YPRDk4ZOmGFtWfezAAQ.jpeg"
+                                    alt="3idiots">
+                                <figcaption class="text-white">
+                                    <h4>3Idiots</h4>
+                                    In college, Farhan and Raju form a great bond with Rancho due to his
+                                    refreshing outlook. Years later, a bet gives them a chance to look for their
+                                    long-lost friend whose existence seems rather elusive refreshing outlook. Years
+                                    later, a bet gives them a chance to look for their
+                                    long-lost friend whose existence seems rather elusive
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <button type="button" class="editBtn">Edit</button>
+                            <button type="button" class="primaryBtn">Remove</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>    
+
+           
+        
+        <div class="movieModal" id="showForm">
+            <form id="movieForm">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h3>Add Movie</h3>
+                        <i class="fa-solid fa-xmark fa-2x" id="closeMark" role="button"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="movieName">Movie Name</label>
+                            <input type="text" class="form-control" id="movieName">
+                        </div>
+                        <div class="form-group">
+                            <label for="movieImg">Movie Image</label>
+                            <input type="text" class="form-control" id="movieImg">
+                        </div>
+                        <div class="form-group">
+                            <label for="movieDesciption">Movie Desciption</label>
+                            <textarea type="text" row="4" class="form-control" id="movieDesciption"></textarea>
+                        </div>
+                          <div class="form-group">
+                            <label for="rating">Rating</label>
+                            <input type="text" class="form-control" id="movieRating">
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button type="submit" class="editBtn" id="addMovie">Add Movie</button>
+                        <button type="button" class="editBtn d-none" id="updateMovie" >Update Movie</button>
+                        <button type="button" class="primaryBtn" id="closeForm">close</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="backDrop" id="backDrop"></div>
+
+
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
