@@ -101,6 +101,9 @@ const movieArr = [
     }
 ];
 //======================= local stroage =============================================
+if(!localStorage.getItem('movieArray')){
+    localStorage.setItem('movieArray',JSON.stringify(movieArr))
+}
 // localStorage.setItem('movieArray',JSON.stringify(movieArr))
 let movieArrays = JSON.parse(localStorage.getItem('movieArray'));
 
